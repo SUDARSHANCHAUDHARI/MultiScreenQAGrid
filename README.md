@@ -19,7 +19,7 @@ Live dashboard for QA and support teams to monitor many signage screens in one p
 
 ## Tech Stack
 
-- Next.js 15
+- Next.js 16
 - React
 - TypeScript
 - Tailwind CSS
@@ -30,7 +30,42 @@ Live dashboard for QA and support teams to monitor many signage screens in one p
 
 ## Getting Started
 
-Coming soon...
+```bash
+pnpm install
+pnpm dev
+```
+
+Open `http://localhost:3000`.
+
+Optional AI environment variables are documented in `.env.example`:
+
+```bash
+AI_PROVIDER=claude
+ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+```
+
+The current demo uses in-memory screen data and API routes. It is suitable for a public prototype, not a real production monitoring wall yet.
+
+## Deployment
+
+Release scope: public demo. Real production still needs persistent screen ingestion, auth, incident workflow, and monitoring.
+
+Recommended first deployment target:
+
+- Cloudflare Pages
+
+Suggested environment:
+
+- standalone project
+- one deployment per repo
+- production branch: `main`
+- framework preset: `Next.js`
+- build command: `pnpm build:cloudflare`
+- build output directory: `.vercel/output/static`
+- Node version: `20.19.6`
+
+Use the normal `pnpm build` and `pnpm typecheck` commands for local verification before deployment.
 
 ## License
 
