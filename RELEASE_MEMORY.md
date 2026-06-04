@@ -49,3 +49,4 @@ Resolve the `tsconfig.json` build change, run typecheck, and smoke-test API rout
 - Accepted the Next 16 `tsconfig.json` normalization because verification passes.
 - Updated README and `.env.example` secret examples to use `YOUR_*` placeholders.
 - Re-ran `pnpm build` after placeholder cleanup; passed.
+- Polished README with public-demo status, technical decisions, Cloudflare deployment settings, verification, known limits, and author section.
