@@ -82,3 +82,5 @@ CLAUDE_TASKS.md
 
 # Keep the committed env template (overrides .env.* ignore)
 !.env.example
+
+repoguard-results/
